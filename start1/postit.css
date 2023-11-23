@@ -1,0 +1,51 @@
+body {
+    font-size: 2.5rem;
+    background-color: gray;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div p {
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.giallo, .verde, .viola {
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.giallo {
+    background-color: rgb(249, 250, 200);
+    transform: rotate(-5deg);
+}
+
+.verde {
+    background-color: rgb(195, 238, 196);
+    transform: rotate(5deg);
+}
+
+.viola {
+    background-color: rgb(191, 192, 230);
+    transform: rotate(-6deg);
+}
+
+.giallo:hover, .verde:hover, .viola:hover {
+	transform: scale(1.5);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+}
